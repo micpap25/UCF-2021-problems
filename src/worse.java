@@ -9,10 +9,10 @@ public class worse{
             String[] values = br.readLine().split(" ");
             String s="";
             for (String val : values) {
-                int adder=val.length()-1;
-                char character= (char)(Character.getNumericValue('A')+ adder);
+                int adder= val.length()-1;
+                char character= (char)('A' + adder);
                 String add=Character.toString(character);
-                s+=add;
+                s += add;
 
             }
             pw.println(s);
