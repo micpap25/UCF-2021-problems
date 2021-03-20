@@ -1,5 +1,6 @@
 import java.io.*;
-
+import java.util.Arrays;
+import java.util.List;
 public class mexstr{
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -7,25 +8,41 @@ public class mexstr{
         int strings=Integer.parseInt(br.readLine());
         
         for(int i=0;i<strings;i++){
-            String [] letters=br.readLine().split("");
+            String letters=br.readLine();
+            
             String ret="";
-            for (String letter : letters) {
-            if (letter.equals("a")){
-                ret+="a";
+            String added="a";
+            boolean done=false;
+           
+            while(!done){
+
+                if(letters.contains(ret+added)){
+                    if (added.equals("z")){
+                        ret+="a";
+                        added="a";
+                        
+                    }
+                    else{
+                        added = Character.toString(added.charAt(0)+1);
+                    }
+
+                }
+                else{
+                    ret+=added;
+                    done=true;
+                }
             }
-            else{
-                ret+= Character.toString((char)(letter.charAt(0)-1));
-                break;
-            }
+            pw.println(ret);
             
         }
-        pw.println(ret);
+        
 
         }
-
-        }
+    }
 
         
-    }
+
+        
+    
 
 
