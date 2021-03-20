@@ -7,18 +7,32 @@ public class triangles{
         int num_shipments= Integer.parseInt(br.readLine());
         for (int i=0;i<num_shipments;i++){
             String[] values = br.readLine().split(" ");
-            int num_sticks=Integer.parseInt(values[0]);
+            int num = Integer.parseInt(values[0]);
             
-            int num_acute=0;
-            int num_right=0;
-            int num_obtuse=0;
-            for(int j=1; j<num_sticks;j++){
-                
+
+            int[] sticks = new int[num];
+            for(int j=1; j<num;j++){
+                sticks[j - 1] = Integer.parseInt(values[i]);
             }
-            pw.println(num_acute+" "+num_right+" "+num_obtuse);
+            int acute=calculateAcute();
+            int right=calculateRight();
+            int obtuse=calculateObtuse();
+            pw.println(acute + " " + right + " " + obtuse);
 
         }
         
        
+    }
+
+    private static int calculateObtuse() {
+        return 1;
+    }
+
+    private static int calculateRight() {
+        return 1;
+    }
+
+    private static int calculateAcute() {
+        return 1;
     }
 }
