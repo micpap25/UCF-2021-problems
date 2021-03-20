@@ -15,9 +15,9 @@ public class triangles{
             for(int j=1; j<num;j++){
                 sticks[j - 1] = Integer.parseInt(values[i]);
             }
-            int acute=calculateAcute();
-            int right=calculateRight();
-            int obtuse=calculateObtuse();
+            int acute=calculateAcute(sticks);
+            int right=calculateRight(sticks);
+            int obtuse=calculateObtuse(sticks);
             pw.println(acute + " " + right + " " + obtuse);
 
         }
@@ -25,12 +25,14 @@ public class triangles{
        
     }
 
-    private static int calculateObtuse() {
+    private static int calculateObtuse(int[] sticks) {
         return 1;
     }
 
     private static int calculateRight() {
-        return 1;
+        for (int i = 5; i <= 2000; i++ {
+
+        }
     }
 
     private static int calculateAcute() {
