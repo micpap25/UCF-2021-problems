@@ -9,8 +9,10 @@ public class mexstr{
         for(int i=0;i<strings;i++){
             String [] letters=br.readLine().split("");
             String ret="";
+            String added="a";
             for (String letter : letters) {
-            if (letter.equals("a")){
+            
+            if (letter.equals("z")){
                 ret+="a";
             }
             else{

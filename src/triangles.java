@@ -12,8 +12,8 @@ public class triangles{
             int num_acute=0;
             int num_right=0;
             int num_obtuse=0;
-            for(int j=0; j<num_sticks;j++){
-
+            for(int j=1; j<num_sticks;j++){
+                
             }
             pw.println(num_acute+" "+num_right+" "+num_obtuse);
 
