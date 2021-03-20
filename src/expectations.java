@@ -4,9 +4,12 @@ public class expectations{
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter pw = new PrintWriter(System.out, true);
-        br.readLine();
+        
+        
+        int numlines= Integer.parseInt(br.readLine());
         String str;
-        while ((str = br.readLine()) != null) {
+        for ( int j=0;j<numlines;j++) {
+            str = br.readLine();
             String[] vals = str.split(" ");
             int curScore = Integer.parseInt(vals[1]);
             int makeUpPoints = 0;
