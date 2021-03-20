@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Arrays;
 
 public class triangles{
     public static void main(String[] args) throws Exception{
