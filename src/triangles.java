@@ -29,13 +29,14 @@ public class triangles{
         return 1;
     }
 
-    private static int calculateRight() {
-        for (int i = 5; i <= 2000; i++ {
+    private static int calculateRight(int[] sticks) {
+        for (int i = 5; i <= 2000; i++) {
 
         }
+        return  1;
     }
 
-    private static int calculateAcute() {
+    private static int calculateAcute(int[] sticks) {
         return 1;
     }
 }
